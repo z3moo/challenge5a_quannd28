@@ -2,6 +2,13 @@
 
 Project PHP thuần và MySQL để quản lý thông tin sinh viên, bài tập, tin nhắn và hồ sơ lớp học.
 
-Lưu ý bảo mật
-- Không lưu thông tin đăng nhập thật trong tài liệu.
-- Không đưa dữ liệu cá nhân thật vào mã nguồn hoặc dữ liệu mẫu.
+# Tài khoản mẫu
+## Teacher
+teacher1 / 123456a@A
+
+teacher2 / 123456a@A
+
+## Student
+student1 / 123456a@A
+
+student2 / 123456a@A
