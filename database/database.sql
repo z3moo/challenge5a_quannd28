@@ -77,7 +77,7 @@ ALTER TABLE challenge_attempts
     ADD COLUMN IF NOT EXISTS created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 
 INSERT INTO users (username, password, full_name, email, phone, role) VALUES
-('teacher_demo_1', '$2y$10$GZbz9gzJnrDIRdtUHr2jQ.wRcxUw46LZYP1GjQ9/uhKlNTCLO3nQu', 'Teacher Demo 1', 'teacher_demo_1@example.invalid', NULL, 'teacher'),
-('teacher_demo_2', '$2y$10$Vwjx.u1GldlTNWYy/Vox8u3ORXneqK//K2xepgcysABfawU8AhvKK', 'Teacher Demo 2', 'teacher_demo_2@example.invalid', NULL, 'teacher'),
-('student_demo_1', '$2y$10$pav7bx8/XpRPV2yipJ0GLOjdd6J5n3bHP0j12QMOmspHlNcp88jay', 'Student Demo 1', 'student_demo_1@example.invalid', NULL, 'student'),
-('student_demo_2', '$2y$10$nIV.4syDjKJagkNTmJAD9O.TRCt82XbjBs9dgaa6wriI0wg95dypG', 'Student Demo 2', 'student_demo_2@example.invalid', NULL, 'student');
+('teacher1', '$2y$10$GZbz9gzJnrDIRdtUHr2jQ.wRcxUw46LZYP1GjQ9/uhKlNTCLO3nQu', 'Teacher 1', 'teacher1@example.invalid', NULL, 'teacher'),
+('teacher2', '$2y$10$Vwjx.u1GldlTNWYy/Vox8u3ORXneqK//K2xepgcysABfawU8AhvKK', 'Teacher 2', 'teacher2@example.invalid', NULL, 'teacher'),
+('student1', '$2y$10$pav7bx8/XpRPV2yipJ0GLOjdd6J5n3bHP0j12QMOmspHlNcp88jay', 'Student 1', 'student1@example.invalid', NULL, 'student'),
+('student2', '$2y$10$nIV.4syDjKJagkNTmJAD9O.TRCt82XbjBs9dgaa6wriI0wg95dypG', 'Student 2', 'student2@example.invalid', NULL, 'student');
