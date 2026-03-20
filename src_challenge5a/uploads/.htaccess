@@ -1,0 +1,18 @@
+# Block all direct HTTP access to uploaded files.
+# Files must be served through file.php which enforces authentication.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Deny from all
+</IfModule>
+
+# Extra: block PHP execution even if the deny-all is bypassed
+<FilesMatch "\.php\d?$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
